@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'second.dart';
+import 'Second.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -11,15 +11,15 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFB2DFDB),
-      appBar: AppBar(
-        title: Text("Ecom App UI"),
-        titleSpacing: 00.0,
-        centerTitle: true,
-        toolbarHeight: 60.2,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(360)),
-        elevation: 0.00,
-        backgroundColor: Colors.black,
-      ), //AppBar
+      // appBar: AppBar(
+      //   title: Text("Ecom App UI"),
+      //   titleSpacing: 00.0,
+      //   centerTitle: true,
+      //   toolbarHeight: 60.2,
+      //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(360)),
+      //   elevation: 0.00,
+      //   backgroundColor: Colors.black,
+      // ), //AppBar
 
       body: ListView(
         padding: const EdgeInsets.all(8),
@@ -29,48 +29,44 @@ class _HomeState extends State<Home> {
                   title: Text("Motor-Bike"),
                   subtitle: Text("Toyota Company"),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/bike.jpg")),
+                      backgroundImage: AssetImage("assets/pic1.jpg")),
                   trailing: Icon(Icons.star))),
           Card(
               child: ListTile(
                   title: Text("Honda Civic"),
                   subtitle: Text("Stylish car"),
-                  leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/car.jpg")),
+                  leading: CircleAvatar(backgroundImage: AssetImage("assets/pic2.jpg")),
                   trailing: Icon(Icons.star))),
           Card(
               child: ListTile(
                   title: Text("MacBook"),
                   subtitle: Text("Do work easily"),
-                  leading: CircleAvatar(backgroundImage: AssetImage("mac.jpg")),
+                  leading: CircleAvatar(backgroundImage: AssetImage("assets/pic3.jpg")),
                   trailing: Icon(Icons.star))),
           Card(
               child: ListTile(
                   title: Text("iPhone"),
                   subtitle: Text("Powerful device "),
-                  leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/mobile.jpg")),
+                  leading: CircleAvatar(backgroundImage: AssetImage("assets/pic4.jpg")),
                   trailing: Icon(Icons.star))),
           Card(
               child: ListTile(
                   title: Text("Royal watch"),
                   subtitle: Text(" Work on Time "),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/watch.jpg")),
+                      backgroundImage: AssetImage("assets/pic5.jpg")),
                   trailing: Icon(Icons.star))),
           Card(
               child: ListTile(
                   title: Text("Laptop"),
                   subtitle: Text(" Window 10 "),
-                  leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/lap.jpg")),
+                  leading: CircleAvatar(backgroundImage: AssetImage("assets/pic6.jpg")),
                   trailing: Icon(Icons.star))),
           Card(
               child: ListTile(
                   title: Text("Speaker"),
                   subtitle: Text("Powerful Sound"),
-                  leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/speaker.jpg")),
+                  leading: CircleAvatar(backgroundImage: AssetImage("assets/pic7.jpg")),
                   trailing: Icon(Icons.star))),
           Container(
             width: 50.0,
