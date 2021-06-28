@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'third.dart';
 
 class Second extends StatefulWidget {
   @override
@@ -27,65 +28,66 @@ class _SecondState extends State<Second> {
                   title: Text("Full sleves Shirt"),
                   subtitle: Text("Rs./800"),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/two.jpg")),
+                      backgroundImage: AssetImage("assets/pic8.jpg")),
                   trailing: Icon(Icons.favorite))),
           Card(
               child: ListTile(
                   title: Text("T-shirt"),
                   subtitle: Text("Rs./600"),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/three.jpg")),
+                      backgroundImage: AssetImage("assets/pic9.jpg")),
                   trailing: Icon(Icons.favorite))),
           Card(
               child: ListTile(
                   title: Text("Black T-shrit"),
                   subtitle: Text(" Rs/.500 "),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/four.jpg")),
+                      backgroundImage: AssetImage("assets/pic10.jpg")),
                   trailing: Icon(Icons.favorite))),
           Card(
               child: ListTile(
                   title: Text("White and Black"),
                   subtitle: Text("Rs./1000"),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/five.jpg")),
+                      backgroundImage: AssetImage("assets/pic11.jpg")),
                   trailing: Icon(Icons.favorite))),
           Card(
               child: ListTile(
                   title: Text("Black T-shirt"),
                   subtitle: Text("Rs./700"),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/six.jpg")),
+                      backgroundImage: AssetImage("assets/pic8.jpg")),
                   trailing: Icon(Icons.favorite))),
           Card(
               child: ListTile(
                   title: Text("Full Sleves shirt"),
                   subtitle: Text("Rs./800"),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/two.jpg")),
+                      backgroundImage: AssetImage("assets/pic10.jpg")),
                   trailing: Icon(Icons.favorite))),
           Card(
               child: ListTile(
                   title: Text("T-shirt"),
                   subtitle: Text("Rs./600"),
                   leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/three.jpg")),
+                      backgroundImage: AssetImage("assets/pic11.jpg")),
                   trailing: Icon(Icons.favorite))),
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0, // this will be set when a new tab is tapped
-        items: [
-          BottomNavigationBarItem(
-            icon: new Icon(Icons.home),
-            title: new Text('Home'),
+          Container(
+            width: 50.0,
+            height: 55.0,
+            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+            child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Third()),
+                  );
+                },
+                style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.pinkAccent)),
+                child: Text("Go Forward")),
           ),
-          BottomNavigationBarItem(
-            icon: new Icon(Icons.mail),
-            title: new Text('Messages'),
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person), title: Text('Profile'))
         ],
       ),
     );
